@@ -180,6 +180,7 @@ def inference_video(args, video_save_path, device=None, total_workers=1, worker_
     elif args.model_name == 'Videox4':  # x4 RRDBNet model
         model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=4)
         netscale = 4
+        file_url = ['https://github.com/delltalal/MonitorAI/releases/tag/v0.1/Videox4.pth']
     elif args.model_name == 'RealESRNet_x4plus':  # x4 RRDBNet model
         model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=4)
         netscale = 4
