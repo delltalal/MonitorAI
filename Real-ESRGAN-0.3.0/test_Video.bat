@@ -1,0 +1,1 @@
+python inference_realesrgan_video.py -n Videox4 -i tmp_frames -o out_frames -s 2

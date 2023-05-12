@@ -1,0 +1,1 @@
+python inference_realesrgan.py -n BooruGan2x4 -i inputs -o output -dn 1

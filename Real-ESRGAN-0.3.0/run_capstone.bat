@@ -1,0 +1,1 @@
+python realesrgan/train.py -opt options/finetune_realesrgan_x4plus_pairdata_capstone.yml --auto_resume

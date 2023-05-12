@@ -1,0 +1,1 @@
+python scripts/pytorch2onnx.py --input F:/AI/xinntao/Real-ESRGAN-0.3.0/experiments/pretrained_models/Mossx4.pth --output Mossx4.onnx
