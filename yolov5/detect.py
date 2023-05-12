@@ -178,12 +178,18 @@ def run(
                     if save_crop:
                         save_one_box(xyxy, imc, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
 #-------------------------------------------------------------------------------------------------
-                    if names[c] == 'knife' or names[c] == 'gun':
-                        print('Threat Detected!')
+                    if names[c] == 'knife':
+                        print('Knife Detected!')
                         audio_file = os.path.dirname(__file__) + '\sounds\warning.mp3'
                         playsound(audio_file)
-                        subprocess.call('python alertSystem.py')
-                        ctypes.windll.user32.MessageBoxW(0, "THREAT DETECTED!", "Alert", 1)
+                        #subprocess.call('python detectedKnife.py')
+                        ctypes.windll.user32.MessageBoxW(0, "Knife DETECTED!", "Alert", 1)
+                    elif names[c] == 'gun':
+                        print('Gun Detected!')
+                        audio_file = os.path.dirname(__file__) + '\sounds\warning.mp3'
+                        playsound(audio_file)
+                        #subprocess.call('python detectedGun.py')
+                        ctypes.windll.user32.MessageBoxW(0, "Gun DETECTED!", "Alert", 1)
                     else:
                         print('No Threats :D')
 #-------------------------------------------------------------------------------------------------
