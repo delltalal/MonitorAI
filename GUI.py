@@ -17,7 +17,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 kivy.require('1.9.0')
 
 def yolov5MainCamera(instance, *args):
-    subprocess.call('python detect.py --source 0', cwd='yolov5')
+    subprocess.call('python cameraAdapter.py', cwd='yolov5')
 
 
 def EsrganUpscale(instance, *args):
