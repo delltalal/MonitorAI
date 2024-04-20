@@ -4,7 +4,7 @@ import ssl
 import smtplib
 
 email_sender = 'aukmonitorai@gmail.com'
-email_password = 'hoylcfahklfuvtcr'
+email_password = 'HIDDEN'
 email_reciever = 'newdelltalal@gmail.com'
 
 subject = 'ALERT!'
